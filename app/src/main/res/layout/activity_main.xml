@@ -22,19 +22,23 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <EditText
-                android:id="@+id/editTextNumberDecimal"
+                android:id="@+id/editNumber1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:textSize="20sp"
+                android:hint="Первое число"
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/editTextNumberDecimal2"
+                android:id="@+id/editNumber2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:textSize="20sp"
+                android:hint="Второе число"
                 android:inputType="numberDecimal" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -53,32 +57,32 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/summ"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="+" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/subtract"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="-" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/multiplicat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="*" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/division"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="/" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -88,11 +92,13 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="TextView"
+            android:text=""
+            android:textSize="36sp"
+            android:hint="Результат"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
